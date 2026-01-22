@@ -40,14 +40,14 @@ body {
   min-height: 100%;
   padding-block: 8vh;
 }
-.subpage-main::before {
+/* .subpage-main::before {
   content: "";
   position: absolute;
   background: url("/src/assets/images/main-background-overlay.jpg") no-repeat
     center center/cover;
   background-attachment: fixed;
   inset: 0;
-}
+} */
 .default-window {
   padding: 16px;
   backdrop-filter: blur(5px);
@@ -181,7 +181,15 @@ body {
   gap: 32px;
   background-color: rgba(255, 255, 255, 0.175);
 }
-
+.services-subpage-overlay {
+  pointer-events: none;
+  z-index: -1;
+  position: fixed;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+}
 @media (min-width: 1200px) {
   .service-section-header {
     justify-content: space-between;
