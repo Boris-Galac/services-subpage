@@ -190,6 +190,10 @@ body {
   width: 100%;
   opacity: 0.2;
 }
+.service-fast-track-list li {
+  font-weight: 200;
+  font-size: 16px;
+}
 @media (min-width: 1200px) {
   .service-section-header {
     justify-content: space-between;
@@ -207,6 +211,12 @@ body {
     font-weight: 300;
     font-size: 20px;
     text-align: center;
+  }
+  .service-fast-track-list li {
+    text-align: left !important;
+  }
+  .service-list-wrapper {
+    display: flex;
   }
   .default-service-box-gallery-body img {
     height: 100%;
